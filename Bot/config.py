@@ -17,21 +17,21 @@ class Config(object):
         BotCommand('broadcast', 'broadcast message')
     ]
 
-    DUMP_ID = int(os.environ.get("DUMP_ID", 0))
+    DUMP_ID = int(os.environ.get("DUMP_ID", "-1002302055616"))
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7471196562:AAF2IGQCl-pz4tDjeCHXRJtMZyd4MwRjxZg")
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", "26684254"))
+    API_HASH = os.environ.get("API_HASH", "fc836096a68be3a4fcd7594cb3d9326f")
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
         "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
 
-    OWNER_ID = int(os.environ.get('OWNER_ID'))
+    OWNER_ID = int(os.environ.get('OWNER_ID', '6161189904'))
 
     # MongoDB
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://renamebot:amrenamebot@cluster0.5ornz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
@@ -49,7 +49,7 @@ class Config(object):
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
     TG_MAX_FILE_SIZE = 2097152000
-    FREE_USER_MAX_FILE_SIZE = 50000000
+    FREE_USER_MAX_FILE_SIZE = 50
 
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
