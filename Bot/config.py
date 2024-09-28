@@ -26,7 +26,7 @@ class Config(object):
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
-        "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
+        "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", "7278618573") else None
 
     OWNER_ID = int(os.environ.get('OWNER_ID', '6161189904'))
 
