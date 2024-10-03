@@ -17,7 +17,7 @@ class Config(object):
         BotCommand('broadcast', 'broadcast message')
     ]
 
-    DUMP_ID = int(os.environ.get("DUMP_ID", "-1002302055616"))
+    DUMP_ID = int(os.environ.get("DUMP_ID", "-1002390863629"))
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7471196562:AAF2IGQCl-pz4tDjeCHXRJtMZyd4MwRjxZg")
 
